@@ -3,42 +3,48 @@ import React from "react";
 export default function Feature() {
   return (
     <div>
-      <section className="py-16 bg-gradient-to-r from-teal-500 to-blue-500 mb-40">
+      <section className="py-14 bg-gray-100 mb-36">
         {/* Blog Title */}
         <div className="text-center">
           <h2
-            className="text-5xl font-extrabold text-white md:text-6xl lg:text-7xl 
-            transition-transform duration-500 ease-in-out transform hover:translate-y-[-8px] hover:text-yellow-300 
+            className="text-4xl font-extrabold text-blue-700 md:text-5xl lg:text-6xl 
+            transition-transform duration-500 ease-in-out transform hover:translate-y-[-5px] hover:text-gray-900 
             animate-fade-in-up"
           >
-            Sumayya Fazal Hussain: AI is Amazing
+            Zaryab Fazal: Unveiling the Future with AI
           </h2>
         </div>
 
         {/* Introductory Text */}
-        <div className="max-w-4xl mx-auto mt-10">
-          <p className="text-center text-base text-gray-200 sm:text-lg md:text-xl leading-relaxed animate-fade-in-up delay-100">
-            Sumayya Fazal Hussain, I am a passionate medical student with a keen interest in web development. Balancing both fields, I specialize in TypeScript, HTML, and modern web development technologies. My unique combination of skills allows me to approach problems from a multi-disciplinary perspective, blending critical thinking from medicine with creative problem-solving in software development. Whether it’s coding an application or studying human anatomy, I strive for excellence and precision in everything I do.
+        <div className="max-w-3xl mx-auto mt-10">
+          <p className="text-center text-base text-gray-600 sm:text-lg md:text-xl leading-relaxed animate-fade-in-up delay-200">
+            Hello! I'm Zaryab Fazal Hussain, a curious medical student and a
+            creative front-end developer. My expertise in TypeScript, HTML, and
+            modern tools enables me to build seamless, user-centric web
+            experiences. By bridging the gap between medicine and technology, I
+            strive to leave a positive impact in both domains. Fueled by a
+            passion for learning and innovation, I am always on the lookout for
+            new challenges and opportunities.
           </p>
         </div>
 
         {/* Categories Section */}
-        <div className="mx-auto max-w-6xl px-6 mt-12">
-          <h3 className="text-3xl font-bold text-center mb-8 text-yellow-300 animate-color-change">
-            Explore Our Categories
+        <div className="mx-auto max-w-5xl px-6 mt-14">
+          <h3 className="text-3xl font-bold text-center mb-10 text-blue-700 animate-bounce">
+            Browse Our Topics
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            {["HTML", "AI", "Web Development"].map((category, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {["AI Innovations", "HTML Mastery", "Tech Trends", "Web Design", "Future Automation", "Creative Development"].map((topic, idx) => (
               <div
-                key={index}
-                className="relative group p-10 bg-white rounded-xl shadow-2xl 
-                hover:bg-teal-200 hover:text-white transition-transform duration-300 ease-in-out 
-                transform hover:scale-110 cursor-pointer text-center"
+                key={idx}
+                className="relative group p-6 bg-white rounded-lg shadow-md 
+                hover:bg-blue-300 hover:text-gray-800 transition-transform duration-300 ease-in-out 
+                transform hover:scale-105 cursor-pointer text-center"
               >
-                <p className="text-xl font-semibold">{category}</p>
+                <p className="text-lg font-medium">{topic}</p>
                 <div
-                  className="absolute inset-0 border-2 border-transparent group-hover:border-yellow-500 
-                  rounded-xl transition duration-300 ease-in-out"
+                  className="absolute inset-0 border-2 border-transparent group-hover:border-gray-800 
+                  rounded-lg transition duration-300 ease-in-out"
                 ></div>
               </div>
             ))}
@@ -46,17 +52,15 @@ export default function Feature() {
         </div>
 
         {/* Informational Footer */}
-        <div className="max-w-5xl mx-auto mt-20">
-          <p className="text-center text-base md:text-lg text-gray-200 leading-relaxed animate-fade-in-down delay-100">
-            Artificial Intelligence and web development are transforming the way
-            we interact with technology. From creating dynamic websites using HTML
-            to building intelligent systems with AI, these fields open up endless
-            possibilities. HTML, the foundation of web development, is not just
-            about structuring content—it’s about creating experiences that connect
-            people and information. With AI revolutionizing everything from
-            automation to user experience, the combination of HTML and AI promises
-            a future where the web is smarter, faster, and more personalized than
-            ever before.
+        <div className="max-w-4xl mx-auto mt-16">
+          <p className="text-center text-base md:text-lg text-gray-600 leading-relaxed animate-fade-in-down delay-150">
+            The synergy of Artificial Intelligence and web development is reshaping
+            the digital landscape. From crafting interactive websites with HTML to
+            leveraging AI for smarter automation, the potential is vast. By blending
+            technology with creativity, we can design solutions that not only meet
+            functional needs but also deliver exceptional user experiences. Together,
+            AI and web development pave the way for a more connected, intelligent
+            future.
           </p>
         </div>
       </section>

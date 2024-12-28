@@ -18,26 +18,26 @@ const Footer = () => {
           >
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
-          <span className="ml-3 text-xl text-white">Sumayya Fazal Hussain</span>
+          <span className="ml-3 text-xl text-white">Zaryab Fazal Hussain</span>
         </a>
         
         {/* Copyright Info */}
         <p className="text-sm text-gray-400 sm:ml-4 sm:mt-0 mt-4">
-          © 2024  Sumayya Fazal Hussain —
-       <a
+          © 2024 Zaryab fazal —
+          <a
             href="https://twitter.com"
             className="text-gray-400 ml-1 hover:text-gray-600 transition duration-300"
             rel="noopener noreferrer"
             target="_blank"
           >
-            @safiafazal847
+            @zaryabfazalhussain
           </a>
         </p>
 
         {/* Social Media Icons */}
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start space-x-4">
           <a
-            href="https://www.linkedin.com/in/sumayya-fazal-2207322b4/"
+            href="https://www.linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-red-500 hover:text-red-600 transition duration-300"
@@ -93,7 +93,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://github.com/Sumayyafazalhussain"
+            href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-gray-600 transition duration-300"

@@ -9,62 +9,62 @@ export default function Navbar() {
     const updateDateTime = () => {
       const now = new Date();
       const options: Intl.DateTimeFormatOptions = {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric",
+        weekday: "short",
+        year: "2-digit",
+        month: "short",
+        day: "2-digit",
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit",
-        hour12: false,
+        hour12: true,
       };
 
-      setCurrentDateTime(now.toLocaleString("en-US", options));
+      setCurrentDateTime(now.toLocaleString("en-GB", options));
     };
 
     updateDateTime();
-    const intervalId = setInterval(updateDateTime, 1000);
+    const intervalId = setInterval(updateDateTime, 500);
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <header className="text-gray-900 body-font bg-white shadow-md">
-      <div className="container mx-auto flex flex-wrap p-4 items-center justify-between">
+    <header className="bg-gradient-to-r from-gray-50 to-gray-200 shadow-lg">
+      <div className="container mx-auto flex flex-wrap p-5 items-center justify-between relative">
         {/* Current Date and Time */}
-        <div className="text-sm text-gray-500 absolute left-4 top-4">
+        <div className="text-xs text-gray-700 absolute top-3 left-4 italic">
           <span>{currentDateTime}</span>
         </div>
 
-        {/* Blog App Heading (Center Aligned) */}
-        <div className="flex justify-center items-center w-full md:w-auto py-2">
+        {/* App Title */}
+        <div className="flex justify-center items-center w-full md:w-auto">
           <Link
             href="/"
-            className="text-3xl text-center font-semibold text-gray-900 hover:text-blue-600 transition-colors duration-300 transform"
+            className="text-2xl md:text-3xl font-bold text-center text-gray-800 hover:text-purple-600 transition-all duration-300"
           >
-           Welcome to my Blog App
+            My Unique Blog Space
           </Link>
         </div>
 
         {/* Navigation Links */}
-        <nav className="md:ml-auto flex flex-wrap items-center justify-center space-x-8 text-lg">
+        <nav className="md:ml-auto flex flex-wrap items-center justify-center gap-6 text-base">
           <Link
             href="/"
-            className="text-gray-700 hover:text-blue-600 transition-colors duration-300 transform hover:scale-105"
+            className="text-gray-800 hover:text-purple-600 transition-transform duration-300 hover:scale-110"
           >
             Home
           </Link>
 
           <Link
-            href="/t"
-            className="text-gray-700 hover:text-blue-600 transition-colors duration-300 transform hover:scale-105"
+            href="/about"
+            className="text-gray-800 hover:text-purple-600 transition-transform duration-300 hover:scale-110"
           >
             About
           </Link>
 
           <Link
-            href="/"
-            className="text-gray-700 hover:text-blue-600 transition-colors duration-300 transform hover:scale-105"
+            href="/contact"
+            className="text-gray-800 hover:text-purple-600 transition-transform duration-300 hover:scale-110"
           >
             Contact
           </Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
             href="https://www.youtube.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-full transition-all duration-300"
+            className="flex items-center bg-gradient-to-r from-red-500 to-red-700 text-white px-4 py-2 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
